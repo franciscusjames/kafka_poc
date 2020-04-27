@@ -1,0 +1,17 @@
+{
+    "name": "imported_file",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "tasks.max": "1",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "topics": "IMPORTED_FILE_AVRO",
+    "connection.url": "jdbc:mysql://plsadot01:5009/PenskeFileQueryDb",
+    "connection.user": "penske",
+    "connection.password": "Password1",
+    "insert.mode": "insert",
+    "table.name.format": "ImportedFile",
+    "pk.mode": "none",
+    "pk.fields": "",
+    "auto.create": "false",
+    "auto.evolve": false,
+    "value.converter.schema.registry.url": "http://plsadot01:8081"
+}
